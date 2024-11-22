@@ -2,4 +2,9 @@
     <string name="app_name">UF1_Proyecto</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Restaurant Fragment -->
+    <string name="restaurant_name">Taberna Bon Pé</string>
+    <string name="restaurant_direccion"><u>Av. Castelao, 14 -16, 15350 Cedeira, A Coruña</u></string>
+    <string name="restaurant_telefono">638540168</string>
 </resources>
