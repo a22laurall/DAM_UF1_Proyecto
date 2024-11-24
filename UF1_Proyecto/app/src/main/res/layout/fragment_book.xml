@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center_horizontal"
+    android:padding="10dp">
+
+    <ImageView
+        android:layout_width="125dp"
+        android:layout_height="85dp"
+        android:src="@drawable/logobonpe" />
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardElevation="4dp"
+        app:strokeColor="@color/black"
+        app:strokeWidth="2dp"
+        android:layout_margin="10dp"
+        >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="60dp">
+
+            <TextView
+                android:id="@+id/text_view_restaurant_name_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/restaurant_name"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <Spinner
+                android:layout_margin="40dp"
+                android:id="@+id/spinner_horarios"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                app:layout_constraintEnd_toEndOf="@id/text_view_restaurant_name_book"
+                app:layout_constraintStart_toStartOf="@id/text_view_restaurant_name_book"
+                app:layout_constraintTop_toTopOf="@id/text_view_restaurant_name_book" />
+
+            <Button
+                android:id="@+id/btn_elegir_mesa"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/btn_elegir_mesa"
+                android:textSize="13sp"
+                android:layout_margin="30dp"
+                app:layout_constraintEnd_toEndOf="@id/spinner_horarios"
+                app:layout_constraintStart_toStartOf="@id/spinner_horarios"
+                app:layout_constraintTop_toTopOf="@id/spinner_horarios"
+                />
+
+            <TextView
+                android:id="@+id/text_view_otras_especificaciones"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="60dp"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:text="@string/text_view_otras_especificaciones"
+                app:layout_constraintEnd_toEndOf="@id/btn_elegir_mesa"
+                app:layout_constraintStart_toStartOf="@id/btn_elegir_mesa"
+                app:layout_constraintTop_toTopOf="@id/btn_elegir_mesa"/>
+
+            <LinearLayout
+                android:id="@+id/intolerancias_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/text_view_otras_especificaciones"
+                app:layout_constraintStart_toStartOf="@id/text_view_otras_especificaciones"
+                app:layout_constraintTop_toTopOf="@id/text_view_otras_especificaciones">
+
+                <RadioButton
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/intolerancias" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/movilidad_reducida_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="30dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/intolerancias_layout"
+                app:layout_constraintStart_toStartOf="@id/intolerancias_layout"
+                app:layout_constraintTop_toTopOf="@id/intolerancias_layout">
+
+                <RadioButton
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/movilidad_reducida" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/animales_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:orientation="horizontal"
+                app:layout_constraintEnd_toEndOf="@id/movilidad_reducida_layout"
+                app:layout_constraintStart_toStartOf="@id/movilidad_reducida_layout"
+                app:layout_constraintTop_toTopOf="@id/movilidad_reducida_layout">
+
+                <RadioButton
+                    android:layout_width="30dp"
+                    android:layout_height="25dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/animales" />
+            </LinearLayout>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_margin="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_cancelar"/>
+
+        <Button
+            android:layout_margin="40dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_reservar"/>
+
+    </LinearLayout>
+
+</LinearLayout>
