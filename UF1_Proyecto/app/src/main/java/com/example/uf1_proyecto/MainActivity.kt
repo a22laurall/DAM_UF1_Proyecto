@@ -1,7 +1,6 @@
 package com.example.uf1_proyecto
 
 import android.os.Bundle
-import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
 

@@ -5,6 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.EditText
+import androidx.navigation.findNavController
 import com.example.uf1_proyecto.adapter.ItemAdapter
 import com.example.uf1_proyecto.data.DataSource
 import com.example.uf1_proyecto.databinding.FragmentHomeBinding
@@ -13,12 +15,12 @@ class HomeFragment : Fragment() {
 
     private var _binding: FragmentHomeBinding? = null
     private val binding: FragmentHomeBinding
-        get() = binding!!
+        get() = _binding!!
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
-    ): View? {
+    ): View {
 
         _binding = FragmentHomeBinding.inflate(inflater, container, false)
         val view = binding.root
@@ -36,8 +38,16 @@ class HomeFragment : Fragment() {
         val recyclerView = binding.recyclerView
         recyclerView.adapter = ItemAdapter(
             requireContext(), dataset,
-            onITemClick = {
-                DataSource().LoadRestaurantForId(id)
+            onITemClick = { restaurant ->
+
+                val restaurantName = requireContext().getString(restaurant.stringResourceId)
+
+                view.findNavController().navigate(
+                    HomeFragmentDirections.actionHomeFragmentToRestaurantFragment(
+                        restaurantName
+                    )
+                )
+
             }
         )
         recyclerView.setHasFixedSize(true)

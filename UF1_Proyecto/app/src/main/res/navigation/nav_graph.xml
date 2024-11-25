@@ -8,11 +8,15 @@
         android:name="com.example.uf1_proyecto.HomeFragment"
         android:label="fragment_home">
         <action
-            android:id="@+id/action_homeFragment_to_restaurantFragment2"
-            app:destination="@id/restaurantFragment2" />
+            android:id="@+id/action_homeFragment_to_restaurantFragment"
+            app:destination="@id/restaurantFragment" />
     </fragment>
     <fragment
-        android:id="@+id/restaurantFragment2"
+        android:id="@+id/restaurantFragment"
         android:name="com.example.uf1_proyecto.RestaurantFragment"
-        android:label="RestaurantFragment" />
+        android:label="RestaurantFragment" >
+        <argument
+            android:name="restaurant_name"
+            app:argType="string" />
+    </fragment>
 </navigation>
