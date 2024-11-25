@@ -12,12 +12,14 @@ import com.example.uf1_proyecto.model.Restaurant
 
 class ItemAdapter (
     private val context: Context,
-    private val dataset: List<Restaurant>
+    private val dataset: List<Restaurant>,
+    private val onITemClick: (Restaurant) -> Unit
         ) : RecyclerView.Adapter<ItemAdapter.ItemViewHolder>(){
     class ItemViewHolder(private val view: View): RecyclerView.ViewHolder(view) {
         val textView: TextView = view.findViewById<TextView>(R.id.tvText)
         val imageView: ImageView = view.findViewById(R.id.ivImage)
     }
+
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): ItemViewHolder {
         val adapterView = LayoutInflater.from(parent.context)
@@ -31,6 +33,11 @@ class ItemAdapter (
         val view = dataset[position]
         holder.textView.text = context.resources.getString(view.stringResourceId)
         holder.imageView.setImageResource(view.drawableResourceId)
+
+        // Configura el clic
+        holder.itemView.setOnClickListener {
+            onITemClick(view)
+        }
     }
 
 }
