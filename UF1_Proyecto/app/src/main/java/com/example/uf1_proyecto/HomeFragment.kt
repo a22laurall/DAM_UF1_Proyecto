@@ -5,7 +5,6 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import android.widget.EditText
 import androidx.navigation.findNavController
 import com.example.uf1_proyecto.adapter.ItemAdapter
 import com.example.uf1_proyecto.data.DataSource
@@ -40,12 +39,10 @@ class HomeFragment : Fragment() {
             requireContext(), dataset,
             onITemClick = { restaurant ->
 
-                val restaurantName = requireContext().getString(restaurant.stringResourceId)
+                val restaurantId = restaurant.id
 
                 view.findNavController().navigate(
-                    HomeFragmentDirections.actionHomeFragmentToRestaurantFragment(
-                        restaurantName
-                    )
+                    HomeFragmentDirections.actionHomeFragmentToRestaurantFragment(restaurantId)
                 )
 
             }

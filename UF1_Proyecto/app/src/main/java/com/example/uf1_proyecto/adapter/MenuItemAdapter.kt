@@ -4,14 +4,16 @@ import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
+import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.databinding.MenuItemViewBinding
-import com.example.uf1_proyecto.model.Category
+import com.example.uf1_proyecto.model.Menu
 import com.example.uf1_proyecto.model.MenuItem
 
-class MenuItemAdapter (
+class MenuItemAdapter(
     private val context: Context,
-    private val dataset: List<Category>
+    private val dataset: Menu?
         ) : RecyclerView.Adapter<MenuItemAdapter.MenuItemViewHolder>(){
+
     class MenuItemViewHolder(val binding: MenuItemViewBinding): RecyclerView.ViewHolder(binding.root)
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MenuItemViewHolder {
@@ -20,7 +22,7 @@ class MenuItemAdapter (
     }
 
     override fun getItemCount(): Int {
-        return dataset.sumOf { it.items.size }  // Cuenta todos los items en todas las categorías
+        return dataset?.categories?.sumOf { it.items.size } ?: 0  // Cuenta todos los items en todas las categorías
     }
 
     override fun onBindViewHolder(holder: MenuItemViewHolder, position: Int) {
@@ -28,18 +30,22 @@ class MenuItemAdapter (
         var foundItem: MenuItem? = null
 
         // Recorremos las categorías hasta encontrar el item correspondiente
-        for (category in dataset) {
-            if (currentItemIndex < category.items.size) {
-                foundItem = category.items[currentItemIndex]
-                break
+        dataset?.categories?.let { categories ->
+            for (category in categories) {
+                if (currentItemIndex < category.items.size) {
+                    foundItem = category.items[currentItemIndex]
+                    break
+                }
+                currentItemIndex -= category.items.size
             }
-            currentItemIndex -= category.items.size  // Avanzamos al siguiente grupo de items
         }
 
         // Ahora `foundItem` tiene el `MenuItem` correspondiente
-        if (foundItem != null) {
-            holder.binding.textViewMenuItemName.text = context.getString(foundItem.name)
-            holder.binding.imageViewMenuItem.setImageResource(foundItem.image)
+        foundItem?.let { item ->
+            holder.binding.textViewMenuItemName.text = context.getString(item.name)
+            holder.binding.imageViewMenuItem.setImageResource(item.image)
+            holder.binding.textViewMenuItemPrice.text = context.getString(R.string.price_format, item.price) // Asignar el precio
+
         }
     }
 

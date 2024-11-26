@@ -6,27 +6,26 @@ import com.example.uf1_proyecto.model.Restaurant
 class DataSource {
     fun LoadRestaurant() : List<Restaurant> {
         return listOf<Restaurant>(
-            Restaurant( R.string.restaurant_bon_pe, R.drawable.bonpe_7208),
-            Restaurant( R.string.restaurant_leira_antiga, R.drawable.bonpe_7208),
-            Restaurant( R.string.restaurant_kilowatio, R.drawable.bonpe_7208),
-            Restaurant( R.string.restaurant_o_meson, R.drawable.bonpe_7208),
-            Restaurant( R.string.restaurant_vilavella, R.drawable.bonpe_7208),
-            Restaurant( R.string.restaurant_os_cantis, R.drawable.bonpe_7208)
+            Restaurant(1,  R.string.restaurant_bon_pe, R.drawable.bonpe_red),
+            Restaurant( 2, R.string.restaurant_leira_antiga, R.drawable.bonpe_red),
+            Restaurant( 3, R.string.restaurant_kilowatio, R.drawable.bonpe_red),
+            Restaurant( 4, R.string.restaurant_o_meson, R.drawable.bonpe_red),
+            Restaurant( 5, R.string.restaurant_vilavella, R.drawable.bonpe_red),
+            Restaurant(6, R.string.restaurant_os_cantis, R.drawable.bonpe_red)
         )
     }
 
-    fun LoadRestaurantForId(id: Int) : Restaurant? {
+    fun LoadRestaurantForId(id: Int) : Restaurant {
 
          when (id) {
-            1 -> return Restaurant( R.string.restaurant_bon_pe, R.drawable.bonpe_7208)
-            2 -> return Restaurant( R.string.restaurant_leira_antiga, R.drawable.bonpe_7208)
-            3 -> return Restaurant( R.string.restaurant_kilowatio, R.drawable.bonpe_7208)
-            4 -> return Restaurant( R.string.restaurant_o_meson, R.drawable.bonpe_7208)
-            5 -> return Restaurant( R.string.restaurant_vilavella, R.drawable.bonpe_7208)
-            6 -> return Restaurant( R.string.restaurant_os_cantis, R.drawable.bonpe_7208)
-            else -> {
-                return null
-            }
-        }
+            1 -> return Restaurant(1,R.string.restaurant_bon_pe, R.drawable.bonpe_red)
+            2 -> return Restaurant(2,R.string.restaurant_leira_antiga, R.drawable.bonpe_red)
+            3 -> return Restaurant(3, R.string.restaurant_kilowatio, R.drawable.bonpe_red)
+            4 -> return Restaurant(4, R.string.restaurant_o_meson, R.drawable.bonpe_red)
+            5 -> return Restaurant(5, R.string.restaurant_vilavella, R.drawable.bonpe_red)
+            6 -> return Restaurant(6, R.string.restaurant_os_cantis, R.drawable.bonpe_red)
+             else -> throw IllegalArgumentException("Restaurant with ID $id not found")  // Lanza una excepción si no existe el restaurante
+
+         }
     }
 }

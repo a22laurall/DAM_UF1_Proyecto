@@ -5,8 +5,10 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import com.example.uf1_proyecto.databinding.FragmentHomeBinding
+import androidx.navigation.findNavController
+import com.example.uf1_proyecto.data.DataSource
 import com.example.uf1_proyecto.databinding.FragmentRestaurantBinding
+import com.example.uf1_proyecto.model.Restaurant
 
 class RestaurantFragment : Fragment() {
 
@@ -22,12 +24,24 @@ class RestaurantFragment : Fragment() {
 
         _binding = FragmentRestaurantBinding.inflate(inflater, container, false)
         val args = RestaurantFragmentArgs.fromBundle(requireArguments())
-        val restaurantName = args.restaurantName
+        val restaurantId = args.restaurantId
         val view = binding.root
 
-        binding.titleRestaurantName.text = restaurantName
+        // Asignar el nombre del restaurante
+        val restaurant = DataSource().LoadRestaurantForId(restaurantId)
+        binding.titleRestaurantName.text = getString(restaurant.stringResourceId)
+
+        binding.buttonCarta.setOnClickListener{
+            val action = RestaurantFragmentDirections.actionRestaurantFragmentToMenuFragment(restaurantId)
+            view.findNavController().navigate(action)
+        }
 
         return view
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
     }
 
 }

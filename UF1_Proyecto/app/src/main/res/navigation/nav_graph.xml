@@ -17,10 +17,10 @@
         android:name="com.example.uf1_proyecto.RestaurantFragment"
         android:label="RestaurantFragment" >
         <argument
-            android:name="restaurant_name"
-            app:argType="string" />
+            android:name="restaurant_id"
+            app:argType="integer"/>
         <action
-            android:id="@+id/action_restaurantFragment_to_menuFragment22"
+            android:id="@+id/action_restaurantFragment_to_menuFragment"
             app:destination="@id/menuFragment2" />
     </fragment>
     <fragment
@@ -29,7 +29,7 @@
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
         <argument
-            android:name="restaurantId"
+            android:name="restaurant_id"
             app:argType="integer"/>
     </fragment>
 </navigation>

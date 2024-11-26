@@ -9,15 +9,15 @@ import com.example.uf1_proyecto.model.MenuItem
 class MenuDataSource {
 
     // Devuelve el menú para un restaurante específico basado en su ID
-    fun LoadMenuForRestaurant(restaurantId: Int): Menu? {
+    fun LoadMenuForRestaurant(restaurantId: Int): Menu {
         return when (restaurantId) {
             1 -> Menu(
-                restaurantId = restaurantId,
+                id = restaurantId,
                 categories = listOf(
                     Category(
                         name = R.string.restaurant_bon_pe,
                         items = listOf(
-                            MenuItem(R.string.menu_item_cesar_salad, 12.00, R.drawable.centolla),
+                            MenuItem(R.string.menu_item_cesar_salad, 12.00, R.drawable.bonpe_red),
                             MenuItem(R.string.menu_item_bruschetta, 14.00, R.drawable.centolla)
                         )
                     ),
@@ -38,7 +38,7 @@ class MenuDataSource {
                 )
             )
             2 -> Menu(
-                restaurantId = restaurantId,
+                id = restaurantId,
                 categories = listOf(
                     Category(
                         name = R.string.category_entrantes,
@@ -63,16 +63,9 @@ class MenuDataSource {
                     )
                 )
             )
-            else -> null // Si no hay menú asociado con el ID
+            else -> throw IllegalArgumentException("Menu for Restaurant with ID $restaurantId not found")
         }
     }
 
-    // Devuelve una lista con todos los menús para todos los restaurantes
-//    fun LoadAllMenus(): List<Menu> {
-//        return listOfNotNull(
-//            LoadMenuForRestaurant(1),
-//            LoadMenuForRestaurant(2),
-//            // Agrega más restaurantes según sea necesario
-//        )
-//    }
+
 }

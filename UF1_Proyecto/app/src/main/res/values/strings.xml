@@ -53,5 +53,6 @@
     <string name="menu_item_mochi_ice_cream">Mochi Ice Cream</string>
     <string name="menu_item_matcha_cheesecake">Matcha Cheesecake</string>
 
+    <string name="price_format">%.2f€</string>
 
 </resources>

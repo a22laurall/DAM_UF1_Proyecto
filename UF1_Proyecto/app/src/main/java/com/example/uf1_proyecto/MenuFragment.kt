@@ -5,11 +5,8 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.navigation.findNavController
-import com.example.uf1_proyecto.adapter.ItemAdapter
-import com.example.uf1_proyecto.data.DataSource
+import com.example.uf1_proyecto.adapter.MenuItemAdapter
 import com.example.uf1_proyecto.data.MenuDataSource
-import com.example.uf1_proyecto.databinding.FragmentHomeBinding
 import com.example.uf1_proyecto.databinding.FragmentMenuBinding
 
 class MenuFragment : Fragment() {
@@ -25,24 +22,19 @@ class MenuFragment : Fragment() {
         // Inflate the layout for this fragment
 
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
+
+        val args = RestaurantFragmentArgs.fromBundle(requireArguments())
+        val restaurantId = args.restaurantId
         val view = binding.root
+
+        val dataset = MenuDataSource().LoadMenuForRestaurant(restaurantId)
+
+        val recyclerView = binding.recyclerViewMenuFragment
+        recyclerView.adapter = MenuItemAdapter(requireContext(), dataset)
+        recyclerView.setHasFixedSize(true)
 
         return view
     }
-
-    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
-        super.onViewCreated(view, savedInstanceState)
-
-        // Cargar el dataset
-        val dataset = MenuDataSource().LoadMenuForRestaurant()
-
-        // Configurar el RecyclerView
-        val recyclerView = binding.recyclerViewMenuFragment
-        recyclerView.adapter = ItemAdapter(
-            requireContext(), dataset)
-        recyclerView.setHasFixedSize(true)
-    }
-
 
     override fun onDestroyView() {
         super.onDestroyView()
