@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/nav_graph"
     app:startDestination="@id/homeFragment">
     <fragment
@@ -18,5 +19,17 @@
         <argument
             android:name="restaurant_name"
             app:argType="string" />
+        <action
+            android:id="@+id/action_restaurantFragment_to_menuFragment22"
+            app:destination="@id/menuFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuFragment2"
+        android:name="com.example.uf1_proyecto.MenuFragment"
+        android:label="fragment_menu"
+        tools:layout="@layout/fragment_menu" >
+        <argument
+            android:name="restaurantId"
+            app:argType="integer"/>
     </fragment>
 </navigation>

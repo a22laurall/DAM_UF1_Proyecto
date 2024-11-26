@@ -33,4 +33,25 @@
     <string name="btn_cancelar">Cancelar</string>
     <string name="btn_reservar">Reservar</string>
 
+    <!-- Menu Fragment -->
+    <!-- Categorias -->
+    <string name="category_entrantes">Entrantes</string>
+    <string name="category_principales">Principales</string>
+    <string name="category_postres">Postres</string>
+
+    <!-- Comidas -->
+    <string name="menu_item_cesar_salad">"Caesar Salad"</string>
+    <string name="menu_item_bruschetta">Bruschetta</string>
+    <string name="menu_item_pasta_alfredo">Pasta Alfredo</string>
+    <string name="menu_item_grilled_salmon">Grilled Salmon</string>
+    <string name="menu_item_tiramisu">Tiramisu</string>
+    <string name="menu_item_panna_cotta">Panna Cotta</string>
+    <string name="menu_item_edamame">Edamame</string>
+    <string name="menu_item_miso_soup">Miso Soup</string>
+    <string name="menu_item_ramen_bowl">Ramen Bowl</string>
+    <string name="menu_item_sushi_platter">Sushi Platter</string>
+    <string name="menu_item_mochi_ice_cream">Mochi Ice Cream</string>
+    <string name="menu_item_matcha_cheesecake">Matcha Cheesecake</string>
+
+
 </resources>
