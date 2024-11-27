@@ -7,5 +7,4 @@ data class Restaurant (
     val id: Int,
     @StringRes val stringResourceId: Int,
     @DrawableRes val drawableResourceId: Int,
-    //val menu: Menu
 )

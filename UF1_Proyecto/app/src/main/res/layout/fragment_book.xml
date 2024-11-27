@@ -6,6 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
+    android:background="@color/beige"
     android:gravity="center"
     android:padding="10dp">
 
@@ -21,108 +22,107 @@
         android:layout_height="wrap_content"
         app:cardElevation="4dp"
         app:strokeColor="@color/black"
+        android:background="@color/white"
         app:strokeWidth="2dp"
         android:layout_margin="10dp"
         >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
-            android:layout_height="400dp"
+            android:layout_height="wrap_content"
             android:padding="60dp">
+
 
             <TextView
                 android:id="@+id/text_view_restaurant_name_book"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
                 android:text="@string/restaurant_name"
                 android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.021"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_view_num_personas_book"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/num_personas"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                app:layout_constraintEnd_toEndOf="@id/text_view_restaurant_name_book"
+                app:layout_constraintHorizontal_bias="0.021"
+                app:layout_constraintStart_toStartOf="@id/text_view_restaurant_name_book"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_restaurant_name_book" />
 
             <Spinner
                 android:id="@+id/spinner_horarios"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="40dp"
-
-                app:layout_constraintEnd_toEndOf="@id/text_view_restaurant_name_book"
-                app:layout_constraintStart_toStartOf="@id/text_view_restaurant_name_book"
-                app:layout_constraintTop_toTopOf="@id/text_view_restaurant_name_book" />
-
+                android:layout_marginTop="40dp"
+                app:layout_constraintEnd_toEndOf="@id/text_view_num_personas_book"
+                app:layout_constraintHorizontal_bias="0.014"
+                app:layout_constraintStart_toStartOf="@id/text_view_num_personas_book"
+                app:layout_constraintTop_toTopOf="@id/text_view_num_personas_book" />
 
             <TextView
-                android:id="@+id/text_view_otras_especificaciones"
+                android:id="@+id/text_view_hora_book"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_margin="60dp"
-                android:text="@string/text_view_otras_especificaciones"
-                android:textSize="18dp"
+                android:layout_marginTop="40dp"
+                android:text="@string/fecha_hora"
+                android:textSize="20sp"
                 android:textStyle="bold"
                 app:layout_constraintEnd_toEndOf="@id/spinner_horarios"
+                app:layout_constraintHorizontal_bias="0.041"
                 app:layout_constraintStart_toStartOf="@id/spinner_horarios"
                 app:layout_constraintTop_toTopOf="@id/spinner_horarios" />
 
-            <LinearLayout
-                android:id="@+id/intolerancias_layout"
-                android:layout_width="wrap_content"
+
+            <RadioButton
+                android:id="@+id/radio_intolerancias"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="@id/text_view_otras_especificaciones"
-                app:layout_constraintStart_toStartOf="@id/text_view_otras_especificaciones"
-                app:layout_constraintTop_toTopOf="@id/text_view_otras_especificaciones">
+                android:text="@string/intolerancias"
+                app:layout_constraintEnd_toEndOf="@id/text_view_hora_book"
+                app:layout_constraintHorizontal_bias="0.014"
+                app:layout_constraintStart_toStartOf="@id/text_view_hora_book"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_hora_book" />
 
-                <RadioButton
-                    android:layout_width="30dp"
-                    android:layout_height="25dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/intolerancias" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/movilidad_reducida_layout"
-                android:layout_width="wrap_content"
+            <EditText
+                android:id="@+id/edit_text_intolerancias"
+                android:layout_width="250dp"
                 android:layout_height="wrap_content"
-                android:layout_margin="30dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="@id/intolerancias_layout"
-                app:layout_constraintStart_toStartOf="@id/intolerancias_layout"
-                app:layout_constraintTop_toTopOf="@id/intolerancias_layout">
+                android:layout_marginTop="4dp"
+                app:layout_constraintEnd_toEndOf="@id/radio_intolerancias"
+                app:layout_constraintHorizontal_bias="0.081"
+                app:layout_constraintStart_toStartOf="@id/radio_intolerancias"
+                app:layout_constraintTop_toBottomOf="@+id/radio_intolerancias" />
 
-                <RadioButton
-                    android:layout_width="30dp"
-                    android:layout_height="25dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/movilidad_reducida" />
-            </LinearLayout>
-
-            <LinearLayout
-                android:id="@+id/animales_layout"
-                android:layout_width="wrap_content"
+            <RadioButton
+                android:id="@+id/radio_movilidad_reducida"
+                android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_margin="40dp"
-                android:orientation="horizontal"
-                app:layout_constraintEnd_toEndOf="@id/movilidad_reducida_layout"
-                app:layout_constraintStart_toStartOf="@id/movilidad_reducida_layout"
-                app:layout_constraintTop_toTopOf="@id/movilidad_reducida_layout">
+                android:layout_marginTop="56dp"
+                android:text="@string/movilidad_reducida"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_intolerancias"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@id/edit_text_intolerancias"
+                app:layout_constraintTop_toTopOf="@id/edit_text_intolerancias" />
 
-                <RadioButton
-                    android:layout_width="30dp"
-                    android:layout_height="25dp" />
-
-                <TextView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/animales" />
-            </LinearLayout>
+            <RadioButton
+                android:id="@+id/radio_animales"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="36dp"
+                android:text="@string/animales"
+                app:layout_constraintEnd_toEndOf="@id/radio_movilidad_reducida"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@id/radio_movilidad_reducida"
+                app:layout_constraintTop_toTopOf="@id/radio_movilidad_reducida" />
 
 
         </androidx.constraintlayout.widget.ConstraintLayout>
