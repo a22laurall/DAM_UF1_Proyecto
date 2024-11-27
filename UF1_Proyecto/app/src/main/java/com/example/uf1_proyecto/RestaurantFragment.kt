@@ -36,6 +36,11 @@ class RestaurantFragment : Fragment() {
             view.findNavController().navigate(action)
         }
 
+        binding.buttonReservar.setOnClickListener{
+            val action = RestaurantFragmentDirections.actionRestaurantFragmentToBookFragment()
+            view.findNavController().navigate(action)
+        }
+
         return view
     }
 

@@ -22,6 +22,9 @@
         <action
             android:id="@+id/action_restaurantFragment_to_menuFragment"
             app:destination="@id/menuFragment2" />
+        <action
+            android:id="@+id/action_restaurantFragment_to_bookFragment"
+            app:destination="@id/bookFragment" />
     </fragment>
     <fragment
         android:id="@+id/menuFragment2"
@@ -32,4 +35,17 @@
             android:name="restaurant_id"
             app:argType="integer"/>
     </fragment>
+    <fragment
+        android:id="@+id/bookFragment"
+        android:name="com.example.uf1_proyecto.BookFragment"
+        android:label="BookFragment" >
+        <action
+            android:id="@+id/action_bookFragment_to_reservationsFragment"
+            app:destination="@id/reservationsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reservationsFragment"
+        android:name="com.example.uf1_proyecto.ReservationsFragment"
+        android:label="fragment_reservations"
+        tools:layout="@layout/fragment_reservations" />
 </navigation>
