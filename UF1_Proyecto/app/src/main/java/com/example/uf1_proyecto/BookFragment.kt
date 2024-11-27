@@ -22,12 +22,20 @@ class BookFragment : Fragment() {
         _binding = FragmentBookBinding.inflate(inflater, container, false)
         val view = binding.root
 
+        binding.editTextFechaHora.setOnClickListener{
+            showDatePickerDialog()
+        }
+
         binding.buttonReservar.setOnClickListener{
             val action = BookFragmentDirections.actionBookFragmentToReservationsFragment()
             view.findNavController().navigate(action)
         }
 
         return view
+    }
+
+    private fun showDatePickerDialog() {
+
     }
 
     override fun onDestroyView() {

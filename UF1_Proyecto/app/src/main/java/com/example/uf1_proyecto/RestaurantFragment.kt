@@ -32,7 +32,7 @@ class RestaurantFragment : Fragment() {
         binding.titleRestaurantName.text = getString(restaurant.stringResourceId)
 
         binding.buttonCarta.setOnClickListener{
-            val action = RestaurantFragmentDirections.actionRestaurantFragmentToMenuFragment(restaurantId)
+            val action = RestaurantFragmentDirections.actionRestaurantFragmentToCategoryFragment(restaurantId)
             view.findNavController().navigate(action)
         }
 

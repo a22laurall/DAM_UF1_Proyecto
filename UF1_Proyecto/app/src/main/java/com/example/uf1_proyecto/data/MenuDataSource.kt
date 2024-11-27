@@ -6,6 +6,7 @@ import com.example.uf1_proyecto.model.Category
 import com.example.uf1_proyecto.model.MenuItem
 
 
+
 class MenuDataSource {
 
     // Devuelve el menú para un restaurante específico basado en su ID
@@ -15,7 +16,7 @@ class MenuDataSource {
                 id = restaurantId,
                 categories = listOf(
                     Category(
-                        name = R.string.restaurant_bon_pe,
+                        name = R.string.category_entrantes,
                         items = listOf(
                             MenuItem(R.string.menu_item_cesar_salad, 12.00, R.drawable.bonpe_red),
                             MenuItem(R.string.menu_item_bruschetta, 14.00, R.drawable.centolla)
@@ -64,6 +65,23 @@ class MenuDataSource {
                 )
             )
             else -> throw IllegalArgumentException("Menu for Restaurant with ID $restaurantId not found")
+        }
+    }
+
+
+    fun LoadMenuForRestaurant(restaurantId: Int, categoryName: String): List<MenuItem> {
+        val menu = LoadMenuForRestaurant(restaurantId) // Obtiene el menú completo del restaurante
+        val category = menu.categories.find { it.name == getResourceId(categoryName)  } // Busca la categoría
+
+        return category?.items ?: listOf() // Devuelve los items de la categoría o una lista vacía
+    }
+
+    private fun getResourceId(categoryName: String): Int {
+        return when (categoryName) {
+            "Entrantes" -> R.string.category_entrantes
+            "Principales" -> R.string.category_principales
+            "Postres" -> R.string.category_postres
+            else -> throw IllegalArgumentException("Invalid category name: $categoryName")
         }
     }
 

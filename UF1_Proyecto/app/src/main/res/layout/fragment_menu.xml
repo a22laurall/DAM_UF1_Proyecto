@@ -8,14 +8,13 @@
     tools:context=".MenuFragment">
 
     <TextView
-        android:id="@+id/text_view_entrantes_category"
+        android:id="@+id/text_view_category_name"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textStyle="bold"
         android:textSize="20sp"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:text="@string/category_entrantes"
         android:layout_gravity="top|center_horizontal"
         android:visibility="visible" />
 

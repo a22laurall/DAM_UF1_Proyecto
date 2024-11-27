@@ -81,16 +81,27 @@
                 app:layout_constraintStart_toStartOf="@id/spinner_horarios"
                 app:layout_constraintTop_toTopOf="@id/spinner_horarios" />
 
+            <EditText
+                android:id="@+id/edit_text_fecha_hora"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                app:layout_constraintEnd_toEndOf="@id/text_view_hora_book"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="¿Cuándo quieres ir?"
+                app:layout_constraintHorizontal_bias="0.014"
+                app:layout_constraintStart_toStartOf="@id/text_view_hora_book"
+                app:layout_constraintTop_toBottomOf="@+id/text_view_hora_book" />
 
             <RadioButton
                 android:id="@+id/radio_intolerancias"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="@string/intolerancias"
-                app:layout_constraintEnd_toEndOf="@id/text_view_hora_book"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_fecha_hora"
                 app:layout_constraintHorizontal_bias="0.014"
-                app:layout_constraintStart_toStartOf="@id/text_view_hora_book"
-                app:layout_constraintTop_toBottomOf="@+id/text_view_hora_book" />
+                app:layout_constraintStart_toStartOf="@id/edit_text_fecha_hora"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_fecha_hora" />
 
             <EditText
                 android:id="@+id/edit_text_intolerancias"

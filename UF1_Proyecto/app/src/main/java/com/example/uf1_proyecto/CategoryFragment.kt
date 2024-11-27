@@ -21,20 +21,22 @@ class CategoryFragment : Fragment() {
     ): View? {
         // Inflate the layout for this fragment
         _binding = FragmentCategoryBinding.inflate(inflater, container, false)
+        val args = CategoryFragmentArgs.fromBundle(requireArguments())
+        val restaurantId = args.restaurantId
         val view = binding.root
 
         binding.buttonEntrantes.setOnClickListener{
-            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2()
+            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2(restaurantId, getString(R.string.category_entrantes))
             view.findNavController().navigate(action)
         }
 
         binding.buttonPrincipales.setOnClickListener{
-            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2()
+            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2(restaurantId, getString(R.string.category_principales))
             view.findNavController().navigate(action)
         }
 
         binding.buttonPostres.setOnClickListener{
-            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2()
+            val action = CategoryFragmentDirections.actionCategoryFragmentToMenuFragment2(restaurantId, getString(R.string.category_postres))
             view.findNavController().navigate(action)
         }
 

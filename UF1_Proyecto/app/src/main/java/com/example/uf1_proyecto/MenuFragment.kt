@@ -25,11 +25,13 @@ class MenuFragment : Fragment() {
 
         _binding = FragmentMenuBinding.inflate(inflater, container, false)
 
-        val args = RestaurantFragmentArgs.fromBundle(requireArguments())
+        val args = MenuFragmentArgs.fromBundle(requireArguments())
         val restaurantId = args.restaurantId
+        val category_name = args.categoryName
         val view = binding.root
 
-        val dataset = MenuDataSource().LoadMenuForRestaurant(restaurantId)
+        binding.textViewCategoryName.text = category_name
+        val dataset = MenuDataSource().LoadMenuForRestaurant(restaurantId, category_name)
 
         val recyclerView = binding.recyclerViewMenuFragment
         recyclerView.adapter = MenuItemAdapter(requireContext(), dataset)
