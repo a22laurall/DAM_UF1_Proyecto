@@ -35,7 +35,12 @@ class BookFragment : Fragment() {
     }
 
     private fun showDatePickerDialog() {
+        val datePicker = DatePickerFragment { day, month, year -> onDateSelected(day, month, year)}
+        datePicker.show(childFragmentManager, "datePicker")
+    }
 
+    private fun onDateSelected(day: Int, month: Int, year: Int) {
+        binding.editTextFechaHora.setText("$day/$month/$year")
     }
 
     override fun onDestroyView() {
