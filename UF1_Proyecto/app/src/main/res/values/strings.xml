@@ -55,4 +55,7 @@
     <string name="animales">Animales (sólo terraza)</string>
     <string name="btn_reservar">Reservar</string>
 
+    <!-- Tus reservas -->
+    <string name="tus_reservas">Tus reservas</string>
+
 </resources>

@@ -2,6 +2,9 @@ package com.example.uf1_proyecto
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
+import androidx.navigation.NavController
+import androidx.navigation.fragment.NavHostFragment
+import androidx.navigation.ui.setupWithNavController
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
 
 
@@ -17,6 +20,14 @@ class MainActivity : AppCompatActivity() {
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
+
+        val navHostFragment =
+            supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment
+        val navController: NavController = navHostFragment.navController
+
+        // Configura el BottomNavigationView con el NavController
+        val bottomNav = binding.bottomNavigation
+        bottomNav.setupWithNavController(navController)
         setContentView(view)
     }
 }
