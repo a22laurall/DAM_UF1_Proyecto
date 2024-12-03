@@ -1,0 +1,92 @@
+[
+  {
+    "id": 1,
+    "name": "Entrantes",
+    "menuId": 1
+  },
+  {
+    "id": 2,
+    "name": "Principales",
+    "menuId": 1
+  },
+  {
+    "id": 3,
+    "name": "Postres",
+    "menuId": 1
+  },
+  {
+    "id": 4,
+    "name": "Entrantes",
+    "menuId": 2
+  },
+  {
+    "id": 5,
+    "name": "Principales",
+    "menuId": 2
+  },
+  {
+    "id": 6,
+    "name": "Postres",
+    "menuId": 2
+  },
+  {
+    "id": 7,
+    "name": "Entrantes",
+    "menuId": 3
+  },
+  {
+    "id": 8,
+    "name": "Principales",
+    "menuId": 3
+  },
+  {
+    "id": 9,
+    "name": "Postres",
+    "menuId": 3
+  },
+  {
+    "id": 10,
+    "name": "Entrantes",
+    "menuId": 4
+  },
+  {
+    "id": 11,
+    "name": "Principales",
+    "menuId": 4
+  },
+  {
+    "id": 12,
+    "name": "Postres",
+    "menuId": 4
+  },
+  {
+    "id": 13,
+    "name": "Entrantes",
+    "menuId": 5
+  },
+  {
+    "id": 14,
+    "name": "Principales",
+    "menuId": 5
+  },
+  {
+    "id": 15,
+    "name": "Postres",
+    "menuId": 5
+  },
+  {
+    "id": 16,
+    "name": "Principales",
+    "menuId": 6
+  },
+  {
+    "id": 17,
+    "name": "Postres",
+    "menuId": 6
+  },
+  {
+    "id": 18,
+    "name": "Entrantes",
+    "menuId": 6
+  }
+]

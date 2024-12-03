@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Restaurante A",
+    "img": 101,
+    "phoneNumber": 123456789,
+    "direction": "Calle Principal 123, Ciudad"
+  },
+  {
+    "id": 2,
+    "name": "Restaurante B",
+    "img": 102,
+    "phoneNumber": 987654321,
+    "direction": "Avenida Secundaria 456, Ciudad"
+  },
+  {
+    "id": 3,
+    "name": "Restaurante C",
+    "img": 101,
+    "phoneNumber": 123456789,
+    "direction": "Calle Principal 123, Ciudad"
+  },
+  {
+    "id": 4,
+    "name": "Restaurante D",
+    "img": 102,
+    "phoneNumber": 987654321,
+    "direction": "Avenida Secundaria 456, Ciudad"
+  },
+  {
+    "id": 5,
+    "name": "Restaurante E",
+    "img": 101,
+    "phoneNumber": 123456789,
+    "direction": "Calle Principal 123, Ciudad"
+  },
+  {
+    "id": 6,
+    "name": "Restaurante F",
+    "img": 102,
+    "phoneNumber": 987654321,
+    "direction": "Avenida Secundaria 456, Ciudad"
+  }
+]

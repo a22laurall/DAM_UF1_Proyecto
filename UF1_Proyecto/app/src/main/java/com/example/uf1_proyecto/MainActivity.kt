@@ -5,8 +5,9 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.navigation.NavController
 import androidx.navigation.fragment.NavHostFragment
 import androidx.navigation.ui.setupWithNavController
+import com.example.uf1_proyecto.data.app.AppDatabase
+import com.example.uf1_proyecto.data.repository.RestaurantRespository
 import com.example.uf1_proyecto.databinding.ActivityMainBinding
-
 
 class MainActivity : AppCompatActivity() {
 
@@ -17,9 +18,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         //enableEdgeToEdge()
         //setContentView(R.layout.activity_main)
+        val database by lazy { AppDatabase.getDatabase(this) }
+        val repository by lazy { RestaurantRespository(database.restaurantDao()) }
 
         binding = ActivityMainBinding.inflate(layoutInflater)
         val view = binding.root
+        
 
         val navHostFragment =
             supportFragmentManager.findFragmentById(R.id.fragment_container_view) as NavHostFragment

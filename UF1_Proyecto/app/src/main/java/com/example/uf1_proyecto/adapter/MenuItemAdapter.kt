@@ -6,8 +6,7 @@ import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.databinding.MenuItemViewBinding
-import com.example.uf1_proyecto.model.Menu
-import com.example.uf1_proyecto.model.MenuItem
+import com.example.uf1_proyecto.data.MenuItem
 
 class MenuItemAdapter(
     private val context: Context,
@@ -28,7 +27,7 @@ class MenuItemAdapter(
     override fun onBindViewHolder(holder: MenuItemViewHolder, position: Int) {
         val item = dataset[position] // Obtén el item actual
 
-        holder.binding.textViewMenuItemName.text = context.getString(item.name)
+        holder.binding.textViewMenuItemName.text = item.name
         holder.binding.imageViewMenuItem.setImageResource(item.image)
         holder.binding.textViewMenuItemPrice.text = context.getString(R.string.price_format, item.price)
     }

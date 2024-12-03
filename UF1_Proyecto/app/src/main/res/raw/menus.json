@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "restaurantId": 1
+  },
+  {
+    "id": 2,
+    "restaurantId": 2
+  },
+  {
+    "id": 3,
+    "restaurantId": 3
+  },
+  {
+    "id": 4,
+    "restaurantId": 4
+  },
+  {
+    "id": 5,
+    "restaurantId": 5
+  },
+  {
+    "id": 6,
+    "restaurantId": 6
+  }
+]

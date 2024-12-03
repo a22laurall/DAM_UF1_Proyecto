@@ -1,0 +1,102 @@
+{
+  "restaurants": [
+    {
+      "id": 1,
+      "name": "Restaurante El Gourmet",
+      "img": 101,
+      "phoneNumber": 1234567890,
+      "direction": "Calle Principal 123, Ciudad A",
+      "menu": {
+        "id": 1,
+        "restaurantId": 1,
+        "categories": [
+          {
+            "id": 1,
+            "name": "Entrantes",
+            "menuId": 1,
+            "menuItems": [
+              { "id": 1, "name": "Bruschetta", "price": 5.5, "img": 201, "categoryId": 1 },
+              { "id": 2, "name": "Sopa de Tomate", "price": 4.0, "img": 202, "categoryId": 1 },
+              { "id": 3, "name": "Ensalada César", "price": 6.0, "img": 203, "categoryId": 1 },
+              { "id": 4, "name": "Palitos de Mozzarella", "price": 5.0, "img": 204, "categoryId": 1 },
+              { "id": 5, "name": "Rollitos de Primavera", "price": 4.5, "img": 205, "categoryId": 1 }
+            ]
+          },
+          {
+            "id": 2,
+            "name": "Principales",
+            "menuId": 1,
+            "menuItems": [
+              { "id": 6, "name": "Pasta Alfredo", "price": 12.0, "img": 206, "categoryId": 2 },
+              { "id": 7, "name": "Pollo Parmesano", "price": 14.0, "img": 207, "categoryId": 2 },
+              { "id": 8, "name": "Risotto de Setas", "price": 13.0, "img": 208, "categoryId": 2 },
+              { "id": 9, "name": "Filete Mignon", "price": 20.0, "img": 209, "categoryId": 2 },
+              { "id": 10, "name": "Hamburguesa Clásica", "price": 10.0, "img": 210, "categoryId": 2 }
+            ]
+          },
+          {
+            "id": 3,
+            "name": "Postres",
+            "menuId": 1,
+            "menuItems": [
+              { "id": 11, "name": "Tiramisú", "price": 6.5, "img": 211, "categoryId": 3 },
+              { "id": 12, "name": "Brownie", "price": 5.5, "img": 212, "categoryId": 3 },
+              { "id": 13, "name": "Helado Artesanal", "price": 4.5, "img": 213, "categoryId": 3 },
+              { "id": 14, "name": "Pastel de Queso", "price": 6.0, "img": 214, "categoryId": 3 },
+              { "id": 15, "name": "Flan", "price": 4.0, "img": 215, "categoryId": 3 }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": 2,
+      "name": "Restaurante La Parrilla",
+      "img": 102,
+      "phoneNumber": 9876543210,
+      "direction": "Avenida Las Flores 456, Ciudad B",
+      "menu": {
+        "id": 2,
+        "restaurantId": 2,
+        "categories": [
+          {
+            "id": 4,
+            "name": "Entrantes",
+            "menuId": 2,
+            "menuItems": [
+              { "id": 16, "name": "Nachos con Guacamole", "price": 6.0, "img": 216, "categoryId": 4 },
+              { "id": 17, "name": "Patatas Bravas", "price": 5.0, "img": 217, "categoryId": 4 },
+              { "id": 18, "name": "Croquetas de Jamón", "price": 6.0, "img": 218, "categoryId": 4 },
+              { "id": 19, "name": "Tacos de Pollo", "price": 7.0, "img": 219, "categoryId": 4 },
+              { "id": 20, "name": "Gyozas", "price": 5.5, "img": 220, "categoryId": 4 }
+            ]
+          },
+          {
+            "id": 5,
+            "name": "Principales",
+            "menuId": 2,
+            "menuItems": [
+              { "id": 21, "name": "Costillas BBQ", "price": 15.0, "img": 221, "categoryId": 5 },
+              { "id": 22, "name": "Parrillada Mixta", "price": 18.0, "img": 222, "categoryId": 5 },
+              { "id": 23, "name": "Solomillo de Cerdo", "price": 16.0, "img": 223, "categoryId": 5 },
+              { "id": 24, "name": "Chuletas de Cordero", "price": 19.0, "img": 224, "categoryId": 5 },
+              { "id": 25, "name": "Salmón a la Parrilla", "price": 17.0, "img": 225, "categoryId": 5 }
+            ]
+          },
+          {
+            "id": 6,
+            "name": "Postres",
+            "menuId": 2,
+            "menuItems": [
+              { "id": 26, "name": "Panna Cotta", "price": 6.0, "img": 226, "categoryId": 6 },
+              { "id": 27, "name": "Tarta de Manzana", "price": 5.5, "img": 227, "categoryId": 6 },
+              { "id": 28, "name": "Crema Catalana", "price": 6.5, "img": 228, "categoryId": 6 },
+              { "id": 29, "name": "Mousse de Chocolate", "price": 5.0, "img": 229, "categoryId": 6 },
+              { "id": 30, "name": "Profiteroles", "price": 6.0, "img": 230, "categoryId": 6 }
+            ]
+          }
+        ]
+      }
+    }
+  ]
+}

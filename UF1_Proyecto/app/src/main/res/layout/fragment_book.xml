@@ -10,22 +10,6 @@
     android:gravity="center"
     android:padding="10dp">
 
-    <ImageView
-        android:layout_width="125dp"
-        android:layout_height="85dp"
-        android:src="@drawable/logobonpe"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="10dp"/>
-
-    <com.google.android.material.card.MaterialCardView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:cardElevation="4dp"
-        app:strokeColor="@color/black"
-        android:background="@color/white"
-        app:strokeWidth="2dp"
-        android:layout_margin="10dp"
-        >
 
         <androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
@@ -88,7 +72,6 @@
                 app:layout_constraintEnd_toEndOf="@id/text_view_hora_book"
                 android:clickable="false"
                 android:focusable="false"
-                android:hint="¿Cuándo quieres ir?"
                 app:layout_constraintHorizontal_bias="0.014"
                 app:layout_constraintStart_toStartOf="@id/text_view_hora_book"
                 app:layout_constraintTop_toBottomOf="@+id/text_view_hora_book" />
@@ -113,32 +96,8 @@
                 app:layout_constraintStart_toStartOf="@id/radio_intolerancias"
                 app:layout_constraintTop_toBottomOf="@+id/radio_intolerancias" />
 
-            <RadioButton
-                android:id="@+id/radio_movilidad_reducida"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="56dp"
-                android:text="@string/movilidad_reducida"
-                app:layout_constraintEnd_toEndOf="@id/edit_text_intolerancias"
-                app:layout_constraintHorizontal_bias="0.0"
-                app:layout_constraintStart_toStartOf="@id/edit_text_intolerancias"
-                app:layout_constraintTop_toTopOf="@id/edit_text_intolerancias" />
-
-            <RadioButton
-                android:id="@+id/radio_animales"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="36dp"
-                android:text="@string/animales"
-                app:layout_constraintEnd_toEndOf="@id/radio_movilidad_reducida"
-                app:layout_constraintHorizontal_bias="1.0"
-                app:layout_constraintStart_toStartOf="@id/radio_movilidad_reducida"
-                app:layout_constraintTop_toTopOf="@id/radio_movilidad_reducida" />
-
-
         </androidx.constraintlayout.widget.ConstraintLayout>
 
-    </com.google.android.material.card.MaterialCardView>
 
     <Button
         android:id="@+id/button_reservar"

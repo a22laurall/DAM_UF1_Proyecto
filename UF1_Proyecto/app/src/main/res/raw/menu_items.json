@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "name": "Ensalada César",
+    "price": 7.99,
+    "img": 201,
+    "categoryId": 1
+  },
+  {
+    "id": 2,
+    "name": "Sopa del día",
+    "price": 4.99,
+    "img": 202,
+    "categoryId": 1
+  },
+  {
+    "id": 3,
+    "name": "Pizza Margarita",
+    "price": 12.99,
+    "img": 203,
+    "categoryId": 2
+  },
+  {
+    "id": 4,
+    "name": "Tarta de queso",
+    "price": 5.99,
+    "img": 204,
+    "categoryId": 3
+  }
+]

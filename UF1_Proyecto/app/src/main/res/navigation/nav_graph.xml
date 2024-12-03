@@ -45,14 +45,17 @@
         android:label="fragment_category"
         tools:layout="@layout/fragment_category" >
         <action
-            android:id="@+id/action_categoryFragment_to_menuFragment2"
-            app:destination="@id/menuFragment2" />
+            android:id="@+id/action_categoryFragment_to_menuFragment"
+            app:destination="@id/menuFragment" />
+        <argument
+            android:name="menu_id"
+            app:argType="integer" />
         <argument
             android:name="restaurant_id"
             app:argType="integer" />
     </fragment>
     <fragment
-        android:id="@+id/menuFragment2"
+        android:id="@+id/menuFragment"
         android:name="com.example.uf1_proyecto.MenuFragment"
         android:label="fragment_menu"
         tools:layout="@layout/fragment_menu" >
@@ -60,7 +63,7 @@
             android:name="restaurant_id"
             app:argType="integer"/>
         <argument
-            android:name="category_name"
-            app:argType="string" />
+            android:name="category_id"
+            app:argType="integer" />
     </fragment>
 </navigation>
