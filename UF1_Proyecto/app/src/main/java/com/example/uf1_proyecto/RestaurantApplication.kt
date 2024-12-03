@@ -21,7 +21,8 @@ class RestaurantApplication : Application() {
     }
 
     private fun initDb() {
-        //deleteDatabase("restaurant_database")
+        deleteDatabase("restaurant_database")
+
 
         val restaurantDao = database.restaurantDao()
         val menuDao = database.menuDao()
@@ -57,6 +58,8 @@ class RestaurantApplication : Application() {
                     menuItemDao.insertMenuItem(item)
                 }
             }
+
+
         }
     }
 }

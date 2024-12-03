@@ -1,44 +1,50 @@
 [
   {
     "id": 1,
-    "name": "Restaurante A",
-    "img": 101,
-    "phoneNumber": 123456789,
-    "direction": "Calle Principal 123, Ciudad"
+    "name": "Taberna Bon Pé",
+    "img": "bonpe_red",
+    "imgLogo": "logobonpe",
+    "phoneNumber": 699930508,
+    "direction": "Av. Castelao, 14 -16, 15350 Cedeira, A Coruña"
   },
   {
     "id": 2,
-    "name": "Restaurante B",
-    "img": 102,
-    "phoneNumber": 987654321,
-    "direction": "Avenida Secundaria 456, Ciudad"
+    "name": "O Amanexo",
+    "img": "rape_cedeiresa",
+    "imgLogo": "logo_amanexo",
+    "phoneNumber": 123456789,
+    "direction": "Plaza de Galicia 1, 15350 Cedeira, A Coruña"
   },
   {
     "id": 3,
-    "name": "Restaurante C",
-    "img": 101,
-    "phoneNumber": 123456789,
-    "direction": "Calle Principal 123, Ciudad"
+    "name": "A Taberna Do Puntal",
+    "img": "puntal",
+    "imgLogo": "logo_puntal",
+    "phoneNumber": 981480300,
+    "direction": "Calle Puntal, s/n, 15554 Vilarrube, A Coruña"
   },
   {
     "id": 4,
-    "name": "Restaurante D",
-    "img": 102,
+    "name": "El Barco",
+    "img": "bonpe_red",
+    "imgLogo": "logobonpe",
     "phoneNumber": 987654321,
-    "direction": "Avenida Secundaria 456, Ciudad"
+    "direction": "Av. Castelao, 50, 15350 Cedeira, A Coruña"
   },
   {
     "id": 5,
-    "name": "Restaurante E",
-    "img": 101,
-    "phoneNumber": 123456789,
-    "direction": "Calle Principal 123, Ciudad"
+    "name": "Tratoria Pulcinella",
+    "img": "tratoria_pulcinella",
+    "imgLogo": "logobonpe",
+    "phoneNumber": 981482930,
+    "direction": " Rúa Ezequiel López, 23, 15357 Cedeira, A Coruña"
   },
   {
     "id": 6,
-    "name": "Restaurante F",
-    "img": 102,
-    "phoneNumber": 987654321,
-    "direction": "Avenida Secundaria 456, Ciudad"
+    "name": "Casalexo",
+    "img": "bonpe_red",
+    "imgLogo": "logobonpe",
+    "phoneNumber": 981354053,
+    "direction": "Rúa Pardo Baixo, 15403 Ferrol, A Coruña"
   }
 ]

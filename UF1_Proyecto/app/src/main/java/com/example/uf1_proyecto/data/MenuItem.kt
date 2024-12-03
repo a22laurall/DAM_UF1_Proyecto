@@ -21,6 +21,6 @@ data class MenuItem (
     @PrimaryKey(autoGenerate = true) val id: Int,
     @ColumnInfo(name = "name") val name: String,
     @ColumnInfo(name = "price") val price: Double,
-    @ColumnInfo(name = "img") val image: Int,
+    @ColumnInfo(name = "img") val img: String,
     @ColumnInfo(name = "categoryId") val categoryId: Int
 )

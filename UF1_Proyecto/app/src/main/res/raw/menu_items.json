@@ -1,30 +1,37 @@
 [
   {
     "id": 1,
-    "name": "Ensalada César",
+    "name": "Percebes",
     "price": 7.99,
-    "img": 201,
+    "img": "percebes",
     "categoryId": 1
   },
   {
     "id": 2,
     "name": "Sopa del día",
     "price": 4.99,
-    "img": 202,
+    "img": "empanada_casera_de_carne",
     "categoryId": 1
   },
   {
     "id": 3,
-    "name": "Pizza Margarita",
+    "name": "Marraxo",
     "price": 12.99,
-    "img": 203,
+    "img": "marraxo",
     "categoryId": 2
   },
   {
     "id": 4,
-    "name": "Tarta de queso",
+    "name": "Tarta de tofe",
     "price": 5.99,
-    "img": 204,
+    "img": "tarta_tofe",
+    "categoryId": 3
+  },
+  {
+    "id": 5,
+    "name": "Milhoja",
+    "price": 5.99,
+    "img": "milhoja",
     "categoryId": 3
   }
 ]
