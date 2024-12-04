@@ -1,7 +1,5 @@
-package com.example.uf1_proyecto.data
+package com.example.uf1_proyecto.entity
 
-import androidx.annotation.DrawableRes
-import androidx.annotation.StringRes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey

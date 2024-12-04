@@ -71,9 +71,9 @@
   },
   {
     "id": 11,
-    "name": "Tostas pulpo",
-    "price": 6.99,
-    "img": "mini_tostas_pulpo",
+    "name": "Tortilla de cigalas",
+    "price": 17.00,
+    "img": "tortilla_cigalas",
     "categoryId": 2
   },
   {
@@ -375,76 +375,55 @@
     "name": "Calzone",
     "price": 8.00,
     "img": "pizza_calzone",
-    "categoryId": 16
+    "categoryId": 17
   },
   {
     "id": 55,
     "name": "Pizza Napolitana",
     "price": 7.50,
     "img": "pizza_napolitana",
-    "categoryId": 16
+    "categoryId": 17
   },
   {
     "id": 56,
     "name": "Pizza Maradona",
     "price": 11.50,
     "img": "pizza_maradona",
-    "categoryId": 16
+    "categoryId": 17
   },
   {
     "id": 57,
     "name": "Pizza formagio",
     "price": 7.00,
     "img": "pizza_formagio",
-    "categoryId": 16
+    "categoryId": 17
   },
   {
     "id": 58,
     "name": "Tarta de queso",
     "price": 5.00,
     "img": "tarta_queso",
-    "categoryId": 17
+    "categoryId": 18
   },
   {
     "id": 59,
     "name": "Brownie",
     "price": 4.50,
     "img": "brownie",
-    "categoryId": 17
+    "categoryId": 18
   },
   {
     "id": 60,
     "name": "Tarta de turrón",
     "price": 4.00,
     "img": "tarta_turron",
-    "categoryId": 17
+    "categoryId": 18
   },
   {
     "id": 61,
     "name": "Tiramisu",
     "price": 5.00,
     "img": "tiramisu",
-    "categoryId": 17
-  },
-  {
-    "id": 62,
-    "name": "Tarta de queso",
-    "price": 6.0,
-    "img": "tarta_queso",
-    "categoryId": 18
-  },
-  {
-    "id": 63,
-    "name": "Tarta_turron",
-    "price": 5.0,
-    "img": "tarta_turron",
-    "categoryId": 18
-  },
-  {
-    "id": 64,
-    "name": "Brownie de chocolate",
-    "price": 4.50,
-    "img": "brownie",
     "categoryId": 18
   },
   {
@@ -467,5 +446,33 @@
     "price": 5.00,
     "img": "semifrio",
     "categoryId": 3
+  },
+  {
+    "id": 68,
+    "name": "Ensalada de la huerta",
+    "price": 10.00,
+    "img": "ensalada_huerta",
+    "categoryId": 16
+  },
+  {
+    "id": 69,
+    "name": "Ensalada de burrata",
+    "price": 12.00,
+    "img": "ensalada_burrata_pesto_rojo",
+    "categoryId": 16
+  },
+  {
+    "id": 70,
+    "name": "Ensalada de langostinos y mango",
+    "price": 9.00,
+    "img": "ensalada_langostinos_mango",
+    "categoryId": 16
+  },
+  {
+    "id": 71,
+    "name": "Ensalada de espinacas",
+    "price": 5.00,
+    "img": "ensalada_espinacas",
+    "categoryId": 16
   }
 ]

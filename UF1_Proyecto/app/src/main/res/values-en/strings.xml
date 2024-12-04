@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">UF1_Project</string>
+
+    <!-- Bottom bar -->
+    <string name="reservations_section">Rerservations</string>
+    <string name="restaurants_section">Restaurants</string>
+
+    <!-- Restaurant Fragment -->
+    <string name="restaurant_name">Taberna Bon Pé</string>
+    <string name="btn_carta">Menu</string>
+    <string name="btn_reserva">Make a reservation</string>
+
+    <!-- Categories -->
+    <string name="category_entrantes">Starters</string>
+    <string name="category_principales">Main Courses</string>
+    <string name="category_postres">Desserts</string>
+
+    <string name="price_format">%.2f€</string>
+
+    <!-- Book Fragment -->
+    <string name="num_personas">Number of people</string>
+    <string-array name="horas_spinner">
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+    </string-array>
+    <string name="fecha_hora">Date and time</string>
+    <string name="intolerancias">Intolerances</string>
+    <string name="movilidad_reducida">Reduced mobility/special needs</string>
+    <string name="animales">Pets (terrace only)</string>
+    <string name="btn_reservar">Reserve</string>
+
+    <!-- Your reservations -->
+    <string name="tus_reservas">Your reservations</string>
+</resources>

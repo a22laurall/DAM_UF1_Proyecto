@@ -1,11 +1,11 @@
 package com.example.uf1_proyecto
 
 import android.app.Application
-import com.example.uf1_proyecto.data.Category
+import com.example.uf1_proyecto.entity.Category
 import com.example.uf1_proyecto.data.JsonUtil
-import com.example.uf1_proyecto.data.Menu
-import com.example.uf1_proyecto.data.MenuItem
-import com.example.uf1_proyecto.data.Restaurant
+import com.example.uf1_proyecto.entity.Menu
+import com.example.uf1_proyecto.entity.MenuItem
+import com.example.uf1_proyecto.entity.Restaurant
 import com.example.uf1_proyecto.data.app.AppDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers

@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.databinding.MenuItemViewBinding
-import com.example.uf1_proyecto.data.MenuItem
+import com.example.uf1_proyecto.entity.MenuItem
 
 class MenuItemAdapter(
     private val context: Context,

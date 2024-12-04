@@ -8,7 +8,7 @@ import android.view.ViewGroup
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.findNavController
 import com.bumptech.glide.Glide
-import com.example.uf1_proyecto.data.Restaurant
+import com.example.uf1_proyecto.entity.Restaurant
 import com.example.uf1_proyecto.data.factory.RestaurantViewModelFactory
 import com.example.uf1_proyecto.data.repository.RestaurantRespository
 import com.example.uf1_proyecto.data.viewmodel.RestaurantViewModel

@@ -5,11 +5,11 @@
     <item
         android:id="@+id/reservationsFragment"
         android:icon="@android:drawable/ic_dialog_email"
-        android:title="Reservations"
+        android:title="@string/reservations_section"
         app:showAsAction="always" />
     <item
         android:id="@+id/homeFragment"
         android:icon="@drawable/cubiertos"
-        android:title="Restaurants"
+        android:title="@string/restaurants_section"
         app:showAsAction="always"/>
 </menu>

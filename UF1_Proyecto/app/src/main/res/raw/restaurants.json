@@ -24,14 +24,6 @@
     "direction": "Calle Puntal, s/n, 15554 Vilarrube, A Coruña"
   },
   {
-    "id": 4,
-    "name": "El Barco",
-    "img": "foto_o_barco",
-    "imgLogo": "logo_el_barco",
-    "phoneNumber": 987654321,
-    "direction": "Av. Castelao, 50, 15350 Cedeira, A Coruña"
-  },
-  {
     "id": 5,
     "name": "Tratoria Pulcinella",
     "img": "tratoria_pulcinella",
@@ -41,9 +33,9 @@
   },
   {
     "id": 6,
-    "name": "Casalexo",
-    "img": "casalexo_logo",
-    "imgLogo": "logobonpe",
+    "name": "El Barco",
+    "img": "foto_o_barco",
+    "imgLogo": "logo_el_barco",
     "phoneNumber": 981354053,
     "direction": "Rúa Pardo Baixo, 15403 Ferrol, A Coruña"
   }

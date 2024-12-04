@@ -4,10 +4,10 @@ import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
-import com.example.uf1_proyecto.data.Category
-import com.example.uf1_proyecto.data.Menu
-import com.example.uf1_proyecto.data.MenuItem
-import com.example.uf1_proyecto.data.Restaurant
+import com.example.uf1_proyecto.entity.Category
+import com.example.uf1_proyecto.entity.Menu
+import com.example.uf1_proyecto.entity.MenuItem
+import com.example.uf1_proyecto.entity.Restaurant
 import com.example.uf1_proyecto.data.dao.CategoryDao
 import com.example.uf1_proyecto.data.dao.MenuDao
 import com.example.uf1_proyecto.data.dao.MenuItemDao

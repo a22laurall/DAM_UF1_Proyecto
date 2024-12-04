@@ -1,7 +1,7 @@
 package com.example.uf1_proyecto.data.repository
 
-import com.example.uf1_proyecto.data.Menu
-import com.example.uf1_proyecto.data.MenuWithCategories
+import com.example.uf1_proyecto.entity.Menu
+import com.example.uf1_proyecto.entity.MenuWithCategories
 import com.example.uf1_proyecto.data.dao.MenuDao
 
 class MenuRepository(private val menuDao: MenuDao) {

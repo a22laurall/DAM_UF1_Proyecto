@@ -44,21 +44,7 @@
     "name": "Postres",
     "menuId": 3
   },
-  {
-    "id": 10,
-    "name": "Entrantes",
-    "menuId": 4
-  },
-  {
-    "id": 11,
-    "name": "Principales",
-    "menuId": 4
-  },
-  {
-    "id": 12,
-    "name": "Postres",
-    "menuId": 4
-  },
+
   {
     "id": 13,
     "name": "Entrantes",
@@ -76,17 +62,17 @@
   },
   {
     "id": 16,
-    "name": "Principales",
+    "name": "Entrantes",
     "menuId": 6
   },
   {
     "id": 17,
-    "name": "Postres",
+    "name": "Principales",
     "menuId": 6
   },
   {
     "id": 18,
-    "name": "Entrantes",
+    "name": "Postres",
     "menuId": 6
   }
 ]

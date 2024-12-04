@@ -1,8 +1,8 @@
 package com.example.uf1_proyecto.data.repository
 
 import androidx.lifecycle.LiveData
-import com.example.uf1_proyecto.data.Restaurant
-import com.example.uf1_proyecto.data.RestaurantWithMenu
+import com.example.uf1_proyecto.entity.Restaurant
+import com.example.uf1_proyecto.entity.RestaurantWithMenu
 import com.example.uf1_proyecto.data.dao.RestaurantDao
 
 

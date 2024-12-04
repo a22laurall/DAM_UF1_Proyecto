@@ -1,4 +1,4 @@
-package com.example.uf1_proyecto.data
+package com.example.uf1_proyecto.entity
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
@@ -6,17 +6,18 @@ import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 @Entity(
-    tableName = "menu",
+    tableName = "category",
     foreignKeys = [
         ForeignKey(
-            entity = Restaurant::class,
+            entity = Menu::class,
             parentColumns = ["id"],
-            childColumns = ["restaurantId"],
+            childColumns = ["menuId"],
             onDelete = ForeignKey.CASCADE
         )
     ]
 )
-data class Menu(
+data class Category (
     @PrimaryKey(autoGenerate = true) val id: Int,
-    @ColumnInfo(name = "restaurantId") val restaurantId: Int
+    @ColumnInfo(name = "name") val name: String,
+    @ColumnInfo(name = "menuId") val menuId: Int
 )

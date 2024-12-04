@@ -1,6 +1,10 @@
 <resources>
     <string name="app_name">UF1_Proyecto</string>
-    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+    <!-- Bottom bar -->
+    <string name="reservations_section">Reservas</string>
+    <string name="restaurants_section">Restaurantes</string>
+
 
     <!-- Restaurant Fragment -->
     <string name="restaurant_name">Taberna Bon Pé</string>

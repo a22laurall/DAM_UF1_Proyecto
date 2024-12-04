@@ -8,8 +8,8 @@ import androidx.room.OnConflictStrategy
 import androidx.room.Query
 import androidx.room.Transaction
 import androidx.room.Update
-import com.example.uf1_proyecto.data.Restaurant
-import com.example.uf1_proyecto.data.RestaurantWithMenu
+import com.example.uf1_proyecto.entity.Restaurant
+import com.example.uf1_proyecto.entity.RestaurantWithMenu
 
 @Dao
 interface RestaurantDao {
