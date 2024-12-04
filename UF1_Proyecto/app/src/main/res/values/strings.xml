@@ -2,42 +2,15 @@
     <string name="app_name">UF1_Proyecto</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
-    <!-- Home Fragment -->
-    <string name="restaurant_bon_pe">Taberna Bon Pé</string>
-    <string name="restaurant_leira_antiga">Leira Antiga</string>
-    <string name="restaurant_o_meson">O Mesón</string>
-    <string name="restaurant_kilowatio">Mesón Kilowatio</string>
-    <string name="restaurant_vilavella">Vilavella</string>
-    <string name="restaurant_os_cantis">Os Cantís</string>
-
-
     <!-- Restaurant Fragment -->
     <string name="restaurant_name">Taberna Bon Pé</string>
-    <string name="restaurant_direccion"><u>Av. Castelao, 14 -16, 15350 Cedeira, A Coruña</u></string>
-    <string name="restaurant_telefono">638540168</string>
     <string name="btn_carta">Carta</string>
     <string name="btn_reserva">Haz tu reserva</string>
 
-
-    <!-- Menu Fragment -->
     <!-- Categorias -->
     <string name="category_entrantes">Entrantes</string>
     <string name="category_principales">Principales</string>
     <string name="category_postres">Postres</string>
-
-    <!-- Comidas -->
-    <string name="menu_item_cesar_salad">"Caesar Salad"</string>
-    <string name="menu_item_bruschetta">Bruschetta</string>
-    <string name="menu_item_pasta_alfredo">Pasta Alfredo</string>
-    <string name="menu_item_grilled_salmon">Grilled Salmon</string>
-    <string name="menu_item_tiramisu">Tiramisu</string>
-    <string name="menu_item_panna_cotta">Panna Cotta</string>
-    <string name="menu_item_edamame">Edamame</string>
-    <string name="menu_item_miso_soup">Miso Soup</string>
-    <string name="menu_item_ramen_bowl">Ramen Bowl</string>
-    <string name="menu_item_sushi_platter">Sushi Platter</string>
-    <string name="menu_item_mochi_ice_cream">Mochi Ice Cream</string>
-    <string name="menu_item_matcha_cheesecake">Matcha Cheesecake</string>
 
     <string name="price_format">%.2f€</string>
 

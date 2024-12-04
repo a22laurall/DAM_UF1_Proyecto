@@ -12,27 +12,27 @@
 
     <Button
         android:id="@+id/button_entrantes"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:text="@string/category_entrantes"
-        android:textSize="25sp"
-        android:layout_margin="20dp"/>
+        android:textSize="35sp"
+        android:layout_margin="30dp"/>
 
     <Button
         android:id="@+id/button_principales"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:text="@string/category_principales"
-        android:textSize="25sp"
-        android:layout_margin="20dp"/>
+        android:textSize="35sp"
+        android:layout_margin="30dp"/>
 
     <Button
         android:id="@+id/button_postres"
-        android:layout_width="200dp"
-        android:layout_height="wrap_content"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
         android:text="@string/category_postres"
-        android:textSize="25sp"
-        android:layout_margin="20dp"/>
+        android:textSize="35sp"
+        android:layout_margin="30dp"/>
 
 
 </LinearLayout>

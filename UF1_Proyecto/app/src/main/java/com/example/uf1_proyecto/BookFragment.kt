@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.ArrayAdapter
 import androidx.navigation.findNavController
 import com.example.uf1_proyecto.databinding.FragmentBookBinding
 
@@ -22,9 +23,20 @@ class BookFragment : Fragment() {
         _binding = FragmentBookBinding.inflate(inflater, container, false)
         val view = binding.root
 
-        binding.editTextFechaHora.setOnClickListener{
-            showDatePickerDialog()
-        }
+        val args = BookFragmentArgs.fromBundle(requireArguments())
+        val restaurantId = args.restaurantId
+
+        // Obtener el array de horas de strings.xml
+        val horarios = resources.getStringArray(R.array.horas_spinner)
+
+        // Crear un adaptador para el Spinner
+        val adapter = ArrayAdapter(requireContext(), android.R.layout.simple_spinner_item, horarios)
+
+        // Definir el estilo del Spinner
+        adapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item)
+
+        // Asignar el adaptador al Spinner
+        binding.spinnerHorarios.adapter = adapter
 
         binding.buttonReservar.setOnClickListener{
             val action = BookFragmentDirections.actionBookFragmentToReservationsFragment()

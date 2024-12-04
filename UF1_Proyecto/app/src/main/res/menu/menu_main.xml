@@ -9,7 +9,7 @@
         app:showAsAction="always" />
     <item
         android:id="@+id/homeFragment"
-        android:icon="@android:drawable/ic_menu_help"
-        android:title="Home"
+        android:icon="@drawable/cubiertos"
+        android:title="Restaurants"
         app:showAsAction="always"/>
 </menu>

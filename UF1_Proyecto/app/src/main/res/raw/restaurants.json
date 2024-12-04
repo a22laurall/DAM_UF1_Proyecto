@@ -10,7 +10,7 @@
   {
     "id": 2,
     "name": "O Amanexo",
-    "img": "rape_cedeiresa",
+    "img": "amanexo",
     "imgLogo": "logo_amanexo",
     "phoneNumber": 123456789,
     "direction": "Plaza de Galicia 1, 15350 Cedeira, A Coruña"
@@ -26,8 +26,8 @@
   {
     "id": 4,
     "name": "El Barco",
-    "img": "bonpe_red",
-    "imgLogo": "logobonpe",
+    "img": "foto_o_barco",
+    "imgLogo": "logo_el_barco",
     "phoneNumber": 987654321,
     "direction": "Av. Castelao, 50, 15350 Cedeira, A Coruña"
   },
@@ -35,14 +35,14 @@
     "id": 5,
     "name": "Tratoria Pulcinella",
     "img": "tratoria_pulcinella",
-    "imgLogo": "logobonpe",
+    "imgLogo": "logo_tratoria",
     "phoneNumber": 981482930,
     "direction": " Rúa Ezequiel López, 23, 15357 Cedeira, A Coruña"
   },
   {
     "id": 6,
     "name": "Casalexo",
-    "img": "bonpe_red",
+    "img": "casalexo_logo",
     "imgLogo": "logobonpe",
     "phoneNumber": 981354053,
     "direction": "Rúa Pardo Baixo, 15403 Ferrol, A Coruña"

@@ -35,11 +35,6 @@ class MenuItemAdapter(
             Glide.with(context)
                 .load(imageResId)
                 .into(holder.binding.imageViewMenuItem)
-        } else {
-            // Si la imagen no se encuentra, puedes cargar una imagen predeterminada
-            Glide.with(context)
-                .load(R.drawable.raxo_cerdo_iberico) // Reemplaza con una imagen predeterminada
-                .into(holder.binding.imageViewMenuItem)
         }
 
         holder.binding.textViewMenuItemName.text = item.name

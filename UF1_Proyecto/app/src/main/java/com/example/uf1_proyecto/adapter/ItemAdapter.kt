@@ -3,8 +3,11 @@ package com.example.uf1_proyecto.adapter
 import android.content.Context
 import android.view.LayoutInflater
 import android.view.ViewGroup
+import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
+import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.databinding.ItemViewBinding
 import com.example.uf1_proyecto.data.Restaurant
 
@@ -24,13 +27,15 @@ class ItemAdapter (
         // binding.root es el CardView que contiene las vistas de ese ítem
 
         val restaurantName: TextView = binding.textViewRestaurantName
+        val restaurantImage: ImageView = binding.ivImage
 
         fun bind(restaurant: Restaurant, onItemClick: (Restaurant) -> Unit) {
-            // Vincula los datos del restaurante al View
             restaurantName.text = restaurant.name
-            // Si tienes una imagen para el restaurante, puedes cargarla en el ImageView
-            // Aquí puedes usar una librería como Glide o Picasso para cargar la imagen
-            // Glide.with(context).load(restaurant.img).into(restaurantImageView)
+            val imageResId = binding.root.context.resources.getIdentifier(restaurant.img, "drawable", binding.root.context.packageName)
+            Glide.with(binding.root.context)
+                .load(imageResId)
+                .into(restaurantImage)
+
             itemView.setOnClickListener {
                 onItemClick(restaurant)  // Llamamos al callback al hacer clic
             }

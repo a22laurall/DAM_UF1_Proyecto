@@ -33,6 +33,9 @@
         <action
             android:id="@+id/action_bookFragment_to_reservationsFragment"
             app:destination="@id/reservationsFragment" />
+        <argument
+            android:name="restaurant_id"
+            app:argType="integer"/>
     </fragment>
     <fragment
         android:id="@+id/reservationsFragment"

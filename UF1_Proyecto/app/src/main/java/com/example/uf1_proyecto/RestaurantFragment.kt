@@ -55,7 +55,7 @@ class RestaurantFragment : Fragment() {
         }
 
         binding.buttonReservar.setOnClickListener {
-            val action = RestaurantFragmentDirections.actionRestaurantFragmentToBookFragment()
+            val action = RestaurantFragmentDirections.actionRestaurantFragmentToBookFragment(restaurantId)
             view.findNavController().navigate(action)
         }
 

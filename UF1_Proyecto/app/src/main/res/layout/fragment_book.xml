@@ -6,9 +6,14 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:layout_gravity="center"
-    android:background="@color/beige"
+    android:background="@color/black"
     android:gravity="center"
     android:padding="10dp">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="16dp">
 
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -96,15 +101,27 @@
                 app:layout_constraintStart_toStartOf="@id/radio_intolerancias"
                 app:layout_constraintTop_toBottomOf="@+id/radio_intolerancias" />
 
+            <Button
+                android:id="@+id/button_reservar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="40dp"
+                android:layout_marginTop="44dp"
+                android:text="@string/btn_reservar"
+                app:layout_constraintEnd_toEndOf="@id/edit_text_intolerancias"
+                app:layout_constraintHorizontal_bias="0.579"
+                app:layout_constraintStart_toStartOf="@id/edit_text_intolerancias"
+                app:layout_constraintTop_toBottomOf="@+id/edit_text_intolerancias" />
         </androidx.constraintlayout.widget.ConstraintLayout>
 
 
-    <Button
-        android:id="@+id/button_reservar"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_margin="40dp"
-        android:text="@string/btn_reservar" />
+    </androidx.cardview.widget.CardView>
+
+
+
+
+
+
 
 
 </LinearLayout>
