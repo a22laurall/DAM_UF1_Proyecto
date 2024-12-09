@@ -8,6 +8,8 @@ import android.view.ViewGroup
 import android.widget.ArrayAdapter
 import androidx.navigation.findNavController
 import com.example.uf1_proyecto.databinding.FragmentBookBinding
+import com.example.uf1_proyecto.BookFragmentArgs
+import com.example.uf1_proyecto.BookFragmentDirections
 
 class BookFragment : Fragment() {
 

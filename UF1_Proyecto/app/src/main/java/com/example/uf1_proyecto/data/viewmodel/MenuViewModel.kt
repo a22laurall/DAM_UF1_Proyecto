@@ -4,9 +4,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.uf1_proyecto.entity.Menu
+import com.example.uf1_proyecto.data.entity.Menu
 import com.example.uf1_proyecto.data.repository.MenuRepository
-import com.example.uf1_proyecto.entity.MenuWithCategories
+import com.example.uf1_proyecto.data.entity.MenuWithCategories
 import kotlinx.coroutines.launch
 
 class MenuViewModel(private val menuRepository: MenuRepository): ViewModel() {

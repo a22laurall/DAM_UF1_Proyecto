@@ -1,8 +1,8 @@
 package com.example.uf1_proyecto.data.dao
 
 import androidx.room.*
-import com.example.uf1_proyecto.entity.Menu
-import com.example.uf1_proyecto.entity.MenuWithCategories
+import com.example.uf1_proyecto.data.entity.Menu
+import com.example.uf1_proyecto.data.entity.MenuWithCategories
 
 @Dao
 interface MenuDao {

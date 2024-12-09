@@ -1,11 +1,11 @@
 package com.example.uf1_proyecto
 
 import android.app.Application
-import com.example.uf1_proyecto.entity.Category
+import com.example.uf1_proyecto.data.entity.Category
 import com.example.uf1_proyecto.data.JsonUtil
-import com.example.uf1_proyecto.entity.Menu
-import com.example.uf1_proyecto.entity.MenuItem
-import com.example.uf1_proyecto.entity.Restaurant
+import com.example.uf1_proyecto.data.entity.Menu
+import com.example.uf1_proyecto.data.entity.MenuItem
+import com.example.uf1_proyecto.data.entity.Restaurant
 import com.example.uf1_proyecto.data.app.AppDatabase
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
@@ -21,8 +21,6 @@ class RestaurantApplication : Application() {
     }
 
     private fun initDb() {
-        deleteDatabase("restaurant_database")
-
 
         val restaurantDao = database.restaurantDao()
         val menuDao = database.menuDao()

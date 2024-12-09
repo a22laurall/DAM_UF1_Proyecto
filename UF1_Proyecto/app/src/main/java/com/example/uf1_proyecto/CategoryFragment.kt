@@ -44,7 +44,6 @@ class CategoryFragment : Fragment() {
 
         categoryViewModel.getCategoriesByMenuId(menuId).observe(viewLifecycleOwner) { categories ->
             categories.forEach { category ->
-                Log.d("CategoryFragment", "Category name: ${category.name}") // Añade este log
 
                 when (category.name) {
                     "Entrantes" -> binding.buttonEntrantes.setOnClickListener {

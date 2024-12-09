@@ -2,9 +2,9 @@ package com.example.uf1_proyecto.data.viewmodel
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.ViewModel
-import com.example.uf1_proyecto.entity.Restaurant
+import com.example.uf1_proyecto.data.entity.Restaurant
 import com.example.uf1_proyecto.data.repository.RestaurantRespository
-import com.example.uf1_proyecto.entity.RestaurantWithMenu
+import com.example.uf1_proyecto.data.entity.RestaurantWithMenu
 
 class RestaurantViewModel(private val restaurantRepository: RestaurantRespository) : ViewModel() {
 

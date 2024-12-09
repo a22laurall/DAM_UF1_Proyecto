@@ -1,7 +1,7 @@
 package com.example.uf1_proyecto.data.repository
 
-import com.example.uf1_proyecto.entity.Category
-import com.example.uf1_proyecto.entity.CategoryWithMenuItems
+import com.example.uf1_proyecto.data.entity.Category
+import com.example.uf1_proyecto.data.entity.CategoryWithMenuItems
 import com.example.uf1_proyecto.data.dao.CategoryDao
 
 class CategoryRepository(private val categoryDao: CategoryDao) {

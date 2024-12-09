@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.databinding.ItemViewBinding
-import com.example.uf1_proyecto.entity.Restaurant
+import com.example.uf1_proyecto.data.entity.Restaurant
 
 // Una vez View Binding está habiltado se genera automáticamente una clase binding para cada XML que
 // tenga un layout. En este caso el archivo item_view.xml tiene un TextView y un ImageView al que

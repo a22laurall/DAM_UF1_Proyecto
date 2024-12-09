@@ -7,7 +7,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.bumptech.glide.Glide
 import com.example.uf1_proyecto.R
 import com.example.uf1_proyecto.databinding.MenuItemViewBinding
-import com.example.uf1_proyecto.entity.MenuItem
+import com.example.uf1_proyecto.data.entity.MenuItem
 
 class MenuItemAdapter(
     private val context: Context,
@@ -27,11 +27,9 @@ class MenuItemAdapter(
 
     override fun onBindViewHolder(holder: MenuItemViewHolder, position: Int) {
         val item = dataset[position] // Obtén el item actual
-        // Verifica si la imagen existe en los recursos
         val imageResId = context.resources.getIdentifier(item.img, "drawable", context.packageName)
 
         if (imageResId != 0) {
-            // Si la imagen existe en drawable, cargala usando Glide
             Glide.with(context)
                 .load(imageResId)
                 .into(holder.binding.imageViewMenuItem)
